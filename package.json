@@ -7,7 +7,7 @@
     "dev": "npm run lint && node src/index.js",
     "lint": "prettier --write .",
     "prepare": "husky install",
-    "changelog": "rimraf  CHANGELOG.md && conventional-changelog -p angular -i CHANGELOG.md -s",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "semantic-release": "semantic-release"
   },
   "lint-staged": {
