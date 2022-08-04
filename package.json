@@ -2,7 +2,6 @@
   "name": "bag-size",
   "version": "0.0.0-development",
   "description": "Get the size of an npm package.",
-  "private": "false",
   "main": "src/index.js",
   "scripts": {
     "dev": "npm run lint && node src/index.js",
