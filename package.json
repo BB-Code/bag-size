@@ -1,0 +1,41 @@
+{
+  "name": "bag-size",
+  "version": "0.0.1",
+  "description": "Get the size of an npm package.",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "npm run lint && node src/index.js",
+    "lint": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write .",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BB-Code/bag-size.git"
+  },
+  "keywords": [],
+  "author": "BB-Code <15919854639@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BB-Code/bag-size/issues"
+  },
+  "homepage": "https://github.com/BB-Code/bag-size#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3"
+  },
+  "dependencies": {
+    "prettier": "^2.7.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
