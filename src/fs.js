@@ -25,7 +25,7 @@ exports.readFile = async (filepath, type) => {
     if (type === 'json') {
         return JSON.parse(await rFile(filepath, 'utf-8'));
     } else {
-        return await rFile(filepath);
+        return await rFile(filepath, 'utf-8');
     }
 };
 

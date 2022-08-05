@@ -1,8 +1,5 @@
-const os = require('os');
 const path = require('path');
 const fs = require('./fs');
-
-console.log(path.join(os.tmpdir(), 'bag-size'));
 
 async function test() {
     let res1 = await fs.getFloderSize(path.join(__dirname, '/tmp'));
